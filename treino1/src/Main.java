@@ -15,7 +15,7 @@ public class Main {
     public static void menu(){
         boolean estaAtivo = false;
         while (!estaAtivo){
-            System.out.println("Escolha uma das opções: \n [1] Adicionar Nota \n [2] Consultar notas \n [3] Alterar notas \n [4] Excluir notas \n [0] Sair ");
+            System.out.println("Escolha uma das opções: \n [1] Adicionar Nota \n [2] Consultar notas \n [3] Alterar notas \n [4] Excluir notas \n [0] Sair \n");
             int opcao = scanner.nextInt();
 
             switch (opcao){
@@ -45,7 +45,7 @@ public class Main {
 
     public static void listar_notas(){
         for(int i=0;i<=nomes.size();i++){
-            System.out.printf("A nota do aluno %s é %s", nomes.get(i), notas.get(i));
+            System.out.printf("A nota do aluno %s é %s \n", nomes.get(i), notas.get(i));
         }
     }
 
